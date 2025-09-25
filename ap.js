@@ -7,7 +7,7 @@ const closeBtn = document.querySelector('.close');
 const cancelBtn = document.getElementById('cancelBtn');
 const productForm = document.getElementById('productForm');
 
-const API_BASE_URL = 'https://localhost:7097/api';
+const API_BASE_URL = 'http://localhost:8080/api';
 
 let products = [];
 let currentPage = 1;
