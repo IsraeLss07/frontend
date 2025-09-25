@@ -7,7 +7,10 @@ const closeBtn = document.querySelector('.close');
 const cancelBtn = document.getElementById('cancelBtn');
 const productForm = document.getElementById('productForm');
 
-const API_BASE_URL = 'http://localhost:8080/api';
+// Configuración de API - se adapta automáticamente al entorno
+const API_BASE_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:8080/api'
+  : 'https://backend-production-e530.up.railway.app/api';
 
 let products = [];
 let currentPage = 1;
